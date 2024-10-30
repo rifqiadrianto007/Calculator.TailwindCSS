@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body class="bg-blue-300 text-white h-screen flex justify-center items-center">
+    <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-lg p-2 w-72 shadow-lg">
+        <!-- Display -->
+        <input type="text"
+            class="display w-full space-x-4 bg-gray-400 font-bold text-right text-white text-4xl p-4 mb-2 rounded-md focus:outline-none"
+            readonly>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 gap-2">
+            <button data-value="C" class="bg-gray-600 text-white text-2xl p-4 rounded-full">C</button>
+            <button data-value="( )" class="bg-gray-600 text-white text-2xl p-4 rounded-full">( )</button>
+            <button data-value="%" class="bg-gray-600 text-white text-2xl p-4 rounded-full">%</button>
+            <button data-value="÷" class="bg-yellow-500 text-white text-2xl p-4 rounded-full">÷</button>
+
+            <button data-value="7" class="bg-gray-500 text-white text-2xl p-4 rounded-full">7</button>
+            <button data-value="8" class="bg-gray-500 text-white text-2xl p-4 rounded-full">8</button>
+            <button data-value="9" class="bg-gray-500 text-white text-2xl p-4 rounded-full">9</button>
+            <button data-value="x" class="bg-yellow-500 text-white text-2xl p-4 rounded-full">×</button>
+
+            <button data-value="4" class="bg-gray-500 text-white text-2xl p-4 rounded-full">4</button>
+            <button data-value="5" class="bg-gray-500 text-white text-2xl p-4 rounded-full">5</button>
+            <button data-value="6" class="bg-gray-500 text-white text-2xl p-4 rounded-full">6</button>
+            <button data-value="-" class="bg-yellow-500 text-white text-2xl p-4 rounded-full">-</button>
+
+            <button data-value="1" class="bg-gray-500 text-white text-2xl p-4 rounded-full">1</button>
+            <button data-value="2" class="bg-gray-500 text-white text-2xl p-4 rounded-full">2</button>
+            <button data-value="3" class="bg-gray-500 text-white text-2xl p-4 rounded-full">3</button>
+            <button data-value="+" class="bg-yellow-500 text-white text-2xl p-4 rounded-full">+</button>
+
+            <button data-value="0" class="bg-gray-500 text-white text-2xl p-4 rounded-full">0</button>
+            <button data-value="00" class="bg-gray-500 text-white text-2xl p-4 rounded-full">00</button>
+            <button data-value="," class="bg-gray-500 text-white text-2xl p-4 rounded-full">,</button>
+            <button data-value="=" class="bg-yellow-500 text-white text-2xl p-4 rounded-full">=</button>
+        </div>
+    </div>
+    <script src="./src/JS/script.js"></script>
+</body>
+
+</html>
